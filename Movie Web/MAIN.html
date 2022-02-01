@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MyTube</title>
+<link rel="stylesheet" href="C:\Users\rajat\OneDrive\Desktop\Movie Web\css\style.css"/>
+<link rel="stylesheet" href="C:\Users\rajat\OneDrive\Desktop\Movie Web\css\lightslider.css"/>
+<script src="js\JQuery3.3.1.js"></script>
+<script src="C:\Users\rajat\OneDrive\Desktop\Movie Web\js\lightslider.js"></script>
+<link rel="shortcut icon" href="icon head.png"/>
+<!--fonts-->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<nav>
+		<!--logo-->
+		<a href="#" class="logo">
+			<img src="images/logo.png"/>
+		</a>
+		  <!--menu--btn--->
+        <input type="checkbox" class="menu-btn" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+		<!--menu-->
+		<ul class="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">VLOGS</a></li>
+			<li><a href="#">FACTS</a></li>
+			<li><a href="#">SHOWS</a></li>
+			<li><a href="#">Comedy</a></li>
+		</ul>
+		<!--search-->
+		<div class="search">
+			<input type="text" placeholder="Search Videos"/>
+			<!--search-->
+			<i class="fa-solid fa-magnifying-glass"></i>
+			</div>
+	</nav>
+	 <section id="main">
+        <!--vlogs----------------------->
+        <!--heading------------->
+        <h1 class="showcase-heading">VLOGS</h1>
+        
+        <ul id="autoWidth2" class="cs-hidden">
+        
+        <!--box-1--------------------------->
+        <li class="item-a">
+		<a href="v1.html">
+            <!--vlog 1------------------->
+           <div class="showcase-box">
+               <img src="images/s-1.jpg"/>
+           </div>
+		   </a>
+               </li>
+            <!--box-2--------------------------->
+            <li class="item-b">
+			<a href="v2.html">
+                <!--vlog box------------------->
+               <div class="showcase-box">
+                   <img src="images/s-2.jpg"/>
+               </div>
+			 </a>
+                   </li>
+                <!--box-3--------------------------->
+            <li class="item-c">
+			<a href="v3.html">
+                <!--vlog-box------------------->
+               <div class="showcase-box">
+                   <img src="images/s-3.jpg"/>
+               </div>
+			 </a>
+                   </li>
+                <!--box-4--------------------------->
+            <li class="item-d">
+			<a href="v4.html">
+                <!--vlog-box------------------->
+               <div class="showcase-box">
+                   <img src="images/s-4.jpg"/>
+               </div>
+			   </a>
+                   </li>
+                   <!--box-5--------------------------->
+            <li class="item-e">
+			<a href="v5.html">
+                <!--vlog-box------------------->
+               <div class="showcase-box">
+                   <img src="images/s-5.jpg"/>
+               </div>
+             </a>
+			 </li>
+          </ul>
+        
+    </section>
+	<script>
+	   $(document).ready(function() {
+    $('#autoWidth,#autoWidth2').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth,#autoWidth2').removeClass('cs-hidden');
+        } 
+    });  
+  });
+</script>
+    <!--Facts---------------------->
+    <section id="latest">
+        <h2 class="latest-heading">FACTS</h2>
+        <!--slider------------------->
+        <ul id="autoWidth2" class="cs-hidden">
+            <!--slide-box-1------------------>
+            <li class="item-a">
+			<a href="f1.html">
+                <div class="latest-box">
+                    <!--img-------->
+                    <div class="latest-b-img">
+                        <img src="images/m-1.jpg">
+                    </div>
+                    <!--text---------->
+                    <div class="latest-b-text">
+                        <strong>Fun Facts</strong>
+                        <p>Trakin Tech</p>
+                    </div>
+                </div>
+				</a>
+            </li>
+    <!--slide-box-2------------------>
+    <li class="item-b">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/m-2.jpg">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>20 Facts you Didn't Know</strong>
+                <p>Fact channel</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-3------------------>
+    <li class="item-c">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/m-3.jpg">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Intresting facts</strong>
+                <p>Fact Check</p>
+            </div>
+        </div>
+    </li>
+
+          </ul>
+    </section>
+    <!--movies---------------------------->
+    <div class="movies-heading">
+        <h2>SHOWS</h2>
+    </div>
+    <section id="movies-list">
+        <!--box-1------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">Comedy</div>
+                <img src="images/l-1.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Bas Kar BASSI Ft. Anubhav Singh Bassi
+            </a>
+        </div>
+         <!--box-2------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">Comedy</div>
+                <img src="images/l-2.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                HOW Indian Couple Fight
+            </a>
+        </div>
+		        <!--box-3------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">Facts</div>
+                <img src="images/m-1.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Fun Facts Ft. Trekin Tech
+            </a>
+        </div>
+		        <!--box-4------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">Facts</div>
+                <img src="images/m-2.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                20 Facts You Didn't Know
+            </a>
+        </div>
+		        <!--box-1------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">Facts</div>
+                <img src="images/m-3.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+               Intresting Facts
+            </a>
+        </div>
+    </section>
+<!--btns--------------->
+    <div class="btns">
+        <a href="#">Previous</a>
+        <a href="#">Next</a>
+    </div>
+    <!--footer------------------>
+    <footer>
+        <p>MyTube Rajat Sinha, Private Website</p>
+        <p>Copyright 2021 - MyTube Rajat Sinha</p>
+		<h4>
+		<input type="button" value="Close this window" onclick="self.close()">
+		</h4>
+    </footer>
+</body>
+</html>
